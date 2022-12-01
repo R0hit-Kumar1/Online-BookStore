@@ -1,0 +1,21 @@
+<div class="container">
+    <div class="image-container">
+        <img [src]="book.imageUrl" alt="Book image"/>   
+    </div>
+    <div class="main-content">Maincontent
+
+
+        <p>{{book.title}}</p>
+        <p>{{book.author}}</p>
+        <h4>description</h4>
+        <p>{{book.description}}</p>
+        <button mat-raised-button (click)="goToBuyLink()" >BUY at {{ book.price | currency : "INR"}}</button>
+       
+
+
+
+
+
+
+    </div>
+</div>

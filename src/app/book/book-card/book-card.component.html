@@ -1,0 +1,22 @@
+<mat-card class="example-card" >
+    <mat-card-header class="book-card-header" (click)="onCardClicked()">
+      
+      <mat-card-title class="book-title">{{book.title}}</mat-card-title>
+      <mat-card-subtitle>{{book.author}}</mat-card-subtitle>
+    </mat-card-header>
+    <img mat-card-image  
+    class="book-image"
+    [src]="book.imageUrl" 
+    alt="Photo of a book"
+    (click)="onCardClicked()"
+    >
+    <mat-card-content class="mat-card-content" (click)="onCardClicked()">
+      <p>
+       {{book.description}}
+      </p>
+    </mat-card-content>
+    <mat-card-actions>
+      <!-- <button mat-button>LIKE</button> -->
+      <button mat-button (click)="goToBuyLink()" >BUY at {{ book.price | currency : "INR"}}</button>
+    </mat-card-actions>
+  </mat-card>

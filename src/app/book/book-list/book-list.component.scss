@@ -1,0 +1,56 @@
+$header-height:70px;
+
+.container{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    height: calc(100vh - $header-height);
+}
+
+
+
+.sidebar-container{
+    flex:20%;
+    border-right: 1px solid black;
+    height:100%;
+    overflow-y: auto;
+    background-color: rgb(102, 174, 236);
+}
+
+.card-container{
+    flex:70%;
+    height:  100%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    padding: 20px;
+    background: rgb(207, 221, 207);
+    gap: 10px;
+    overflow-y: scroll;
+
+}
+
+.category-list{
+    padding: 20px;
+    list-style: none;
+}
+.category-list li{
+    font-family: "Helvetica Neue";
+    
+    
+    margin-top: 10px;
+    cursor: pointer;
+}
+
+.category-list li:hover{
+    text-decoration: underline;
+    
+}
+
+.selected-category{
+    font-weight: 600;
+    color: aqua;
+    
+}
+

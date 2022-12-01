@@ -1,0 +1,19 @@
+
+<div class="container">
+    <aside class="sidebar-container">
+        <ul class="category-list" >
+            <li *ngFor="let category of bookCategories"
+             (click)="onCategorySelected(category)"
+              [class.selected-category]="category.categoryId===selectedBookCategory?.categoryId" 
+            
+            >{{category.title}}</li>
+        </ul>
+    </aside>
+    
+    <div class="card-container">
+       
+       <app-book-card *ngFor="let book of books" [book]="book"
+       (cardClicked)="goToBookDetailView(book)"
+       ></app-book-card>
+    </div>
+</div>

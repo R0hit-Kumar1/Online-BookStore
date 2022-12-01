@@ -1,0 +1,47 @@
+.example-card {
+  height: 400px;
+    width: 300px;
+    background-color: aliceblue;
+    }
+
+    .mat-card-content{
+      height: 15%;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      display: -webkit-box;
+      -webkit-line-clamp: 3;
+      -webkit-box-orient: vertical;
+      cursor: pointer;
+      
+    }
+
+    .book-title{
+      width: 100%;
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      
+
+    }
+
+
+    .book-image{
+      height: 180px;
+      cursor: pointer;
+    }
+    .book-card-header{
+      cursor: pointer;
+    }
+
+    ::ng-deep .book-card-header .mat-mdc-card-header-text{
+      margin:0px;
+      width:100%;
+    }
+
+    
+
+    
+    
+
+  
+  
